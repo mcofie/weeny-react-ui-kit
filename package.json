@@ -89,6 +89,9 @@
       ]
     ]
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "readme": "ERROR: No README data found!",
   "description": "This is a modular design system written in react",
   "main": "dist/index.js",
