@@ -89,7 +89,6 @@
     ]
   },
   "readme": "ERROR: No README data found!",
-  "_id": "weeny@0.1.0",
   "description": "This is a modular design system written in react",
   "main": "dist/index.js",
   "repository": "git@github.com:mcofie/weeny-react-ui-kit.git",
