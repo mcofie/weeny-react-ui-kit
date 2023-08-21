@@ -9,9 +9,15 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/preset-create-react-app",
     "@storybook/addon-a11y",
+    "@storybook/addon-mdx-gfm"
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "@storybook/builder-webpack5"
+
+  "framework": {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
+  typescript: { reactDocgen: false },
+  docs: {
+    autodocs: true
   }
 }
