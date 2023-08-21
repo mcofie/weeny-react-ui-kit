@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from "styled-components";
 
+
+//Alert Title
 const Title = styled.h1`
   font-size: 1.5em;
   text-align: center;
   color: #BF4F74;
 `;
 
-function Alert() {
+
+// @ts-ignore
+function Alert(data: IAlert) {
     return (
         <>
-            <Title>Hello</Title>
+            <Title>{data.title}</Title>
         </>
     );
 }

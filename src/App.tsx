@@ -1,11 +1,12 @@
 import React from 'react';
-import Alert from "./components/Alert";
+import Alert from "./components/Alert/Alert";
+import {AlertTypes} from "./components/Alert/IAlert";
 
 
 function App() {
     return (
         <div className="App">
-            <Alert></Alert>
+            <Alert title={"Henry"} message={"Accory"} type={AlertTypes.PENDING}></Alert>
         </div>
     );
 }
