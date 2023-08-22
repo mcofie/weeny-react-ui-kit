@@ -44,6 +44,12 @@ export enum ColorTokens {
 
 
 // @ts-ignore
+//App Color
+interface AppColors {
+    dark: string,
+    light: string
+}
+
 /**
  * Light Colors
  */
@@ -51,7 +57,7 @@ export enum ColorTokens {
 const lightColors = {
     name: 'light-colors',
     data: {
-        primary:  ColorTokens.NAVY_500,
+        primary: ColorTokens.NAVY_500,
         secondary: ColorTokens.BLUE_400,
         accent: '',
         neutral: '',
@@ -70,17 +76,36 @@ const lightColors = {
  */
 //Specify the dark mode colors according to the theme
 
-const darkPrimaryColor = '#FFF5E0';
-
-
-interface AppColors {
-    dark: string,
-    light: string
+const darkColors = {
+    name: 'dark-colors',
+    data: {
+        primary: ColorTokens.NAVY_300,
+        secondary: ColorTokens.BLUE_700,
+        accent: '',
+        neutral: '',
+        background: '',
+        text: '',
+        border: '',
+        success: '',
+        warning: '',
+        error: '',
+    }
 }
 
-export const PrimaryColor: AppColors = {
+
+const PrimaryColor: AppColors = {
     light: lightColors.data.primary,
-    dark: darkPrimaryColor
+    dark: darkColors.data.primary
 };
+
+const TextColor: AppColors = {
+    light: lightColors.data.text,
+    dark: darkColors.data.text
+}
+
+export const Colors = {
+    primary: PrimaryColor,
+    text: TextColor
+}
 
 

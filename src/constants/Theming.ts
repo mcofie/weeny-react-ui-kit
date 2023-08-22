@@ -1,21 +1,19 @@
 // @ts-ignore
 import theme from 'styled-theming';
-import {PrimaryColor} from "./Colors";
+import {Colors} from "./Colors";
 
 
 export const Themed: DefaultTheme = {
-    backgroundColor: theme('mode', {
-        light: PrimaryColor.light,
-        dark: PrimaryColor.dark,
-    }),
+    backgroundColor: theme('mode', Colors.primary),
+    textColor: theme('mode', Colors.text)
 }
 
-interface Theme{
- backgroundColor?: any
- textColor?: any
+interface Theme {
+    backgroundColor?: any
+    textColor?: any
 }
 
-interface DefaultTheme extends Theme{
+interface DefaultTheme extends Theme {
 
 }
 

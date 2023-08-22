@@ -6,7 +6,7 @@ import {ThemeProvider} from "styled-components";
 function App() {
     return (
         <div className="App">
-            <ThemeProvider theme={{mode: 'light'}}>
+            <ThemeProvider theme={{mode: 'dark'}}>
                 <Button></Button>
             </ThemeProvider>
         </div>
