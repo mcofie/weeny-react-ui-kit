@@ -1,4 +1,2 @@
 // @ts-ignore
-enum Dimens {
-
-}
+enum Dimens {}
